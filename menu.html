@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Wallet - Menú Principal</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <header class="text-center"><h2>Menú Principal</h2></header>
+    <div class="form-group mt-5 mb-5">
+      <label>Dinero en cuenta:</label>
+      <h3 class="balance" id="balance">$0.00</h3>
+    </div>
+    <div class="d-grid gap-2">
+      <a href="deposit.html" id="depositar" class="btn btn-primary">Depositar</a>
+      <a href="sendmoney.html" id="enviar" class="btn btn-primary">Enviar Dinero</a>
+      <a href="transactions.html" id="movimientos" class="btn btn-primary">Últimos Movimientos</a>
+    </div>
+    <p id="mensajeArea" class="mt-3 text-center fw-bold"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

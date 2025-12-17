@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Wallet - Movimientos</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="mb-4">
+    <label for="filtroTipo" class="form-label">Filtrar por tipo:</label>
+      <select id="filtroTipo" class="form-control">
+        <option value="todos">Todos los movimientos</option>
+        <option value="compra">Compras</option>
+       <option value="deposito">Depósitos</option>
+      <option value="transferencia">Transferencias</option>
+     </select>
+</div>
+  <div class="container text-center">
+    <h2 class="mb-4">Últimos Movimientos</h2>
+    <ul id="listaMovimientos" class="list-group text-start">
+        <!-- Se llena dinámicamente -->
+    </ul>
+    <a href="menu.html" class="btn btn-secondary mt-4 w-100">Volver al Menú</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>

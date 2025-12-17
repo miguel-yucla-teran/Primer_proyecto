@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Wallet - Enviar Dinero</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Enviar Dinero</h2>
+    <input type="text" class="form-control mb-2" id="searchContact" placeholder="Buscar contacto...">
+    <button id="btnAgregar" class="btn btn-sm btn-light w-100 mb-3">+ Agregar nuevo contacto</button>
+    
+    <ul id="contactList" class="list-group mb-3">
+        <!-- Contactos iniciales si no hay en Storage -->
+        <li class="list-group-item" data-nombre="John Doe">John Doe <br><small>CBU: 123456</small></li>
+    </ul>
+
+    <button id="btnEnviar" class="btn btn-primary w-100 mb-3">Enviar dinero</button>
+    <a href="menu.html" class="btn btn-secondary w-100">Volver</a>
+    <div id="resultado" class="mt-2"></div>
+    <br>
+    <br>
+    <div id="contenedor-alerta1"></div>
+       <div id="contenedor-alerta2"></div>
+  
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
